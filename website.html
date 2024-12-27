@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+<style type="text/css" id="dcoder_stylesheet">/* Reset and general styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #2d2d2d;
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar .logo a {
+  font-size: 26px;
+  font-weight: 600;
+  color: #00f2b3;
+  text-decoration: none;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar nav ul li {
+  margin: 0 15px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #bbb;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+  color: #00f2b3;
+}
+
+.hero {
+  margin-top: 40px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.hero h1 span {
+  color: #00f2b3;
+  text-shadow: 0 0 15px rgba(0, 242, 179, 0.8);
+}
+
+.cta-btn {
+  margin-top: 20px;
+  background-color: #00f2b3;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 242, 179, 0.7);
+}
+
+.cta-btn:hover {
+  background-color: white;
+  color: #00f2b3;
+  box-shadow: 0 0 20px rgba(0, 242, 179, 1);
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #00f2b3;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.contact-option {
+  width: 30%;
+  text-align: center;
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.facebook {
+  background-color: #1877F2;
+}
+
+.email {
+  background-color: #ea4335;
+}
+
+footer {
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 20px;
+  color: #bbb;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-option {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}</style></head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="#">My Portfolio</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <h1>Hi, I'm <span>Junaid</span></h1>
+      <p>A passionate web developer</p>
+      <a href="#contact" class="cta-btn">Contact Me</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Welcome to my portfolio website! I specialize in creating beautiful and functional websites.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>You can reach out to me via WhatsApp, Facebook, or Email. Just choose your preferred platform!</p>
+
+      <div class="contact-options">
+        <!-- WhatsApp -->
+        <div class="contact-option">
+          <a href="https://wa.me/8801879268551" target="_blank" class="cta-btn whatsapp">WhatsApp</a>
+        </div>
+
+        <!-- Facebook -->
+        <div class="contact-option">
+          <a href="https://www.facebook.com/junaid5551?mibextid=ZbWKwL" target="_blank" class="cta-btn facebook">Facebook</a>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-option">
+          <a href="mailto:jalhabib139@gmail.com" class="cta-btn email">Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Junaid. All rights reserved.</p>
+  </footer>
+
+<script type="text/javascript" id="dcoder_script">// Simple Scroll Animation Example
+window.addEventListener('scroll', function () {
+  const elements = document.querySelectorAll('.fade-in');
+  elements.forEach(function (element) {
+    if (element.getBoundingClientRect().top < window.innerHeight) {
+      element.classList.add('visible');
+    }
+  });
+});</script></body></html>
